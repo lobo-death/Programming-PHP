@@ -1,0 +1,25 @@
+<!DOCTYPE html5>
+<html>
+	<head>
+		<meta charset="UTF-8" content="text/html5">
+		<title>Fatec Bauru - Login</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	
+	<body>
+		<div id="cadastrar"><a href="caduser.html">Cadastre-se &raquo;</a></div>
+		<div id="login" class="form bradius" >
+			<div class="message"></div>
+			<div class="logo"><img src="images/logofatec.jpg"  width="250" height="90"></div>
+			<div class="acomodar">
+				<form method="POST" action="../controller/acesso.php" name="login" onSubmit="return validalogin();">
+					<label for="user">Usuário:</label><input type="text" 	 id="user" name="user" class="txt bradius" tabindex="1" autocomplete="off" placeholder=" Digite o seu Usuário " autofocus />
+					<label for="pass">Senha:  </label><input type="password" id="pass" name="pass" class="txt bradius" tabindex="2" autocomplete="off" placeholder=" Digite a sua Senha" />
+					<input type="submit" class="sb bradius" value="Entrar" tabindex="3" />
+				</form>
+			<!-- acomodar -->
+			</div>
+		<!-- div login -->
+		</div>	
+	</body>
+</html>

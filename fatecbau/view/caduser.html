@@ -1,0 +1,31 @@
+<!DOCTYPE html5>
+<html>
+	<head>
+		<meta charset="UTF-8" content="text/html5">
+		<title>Fatec Bauru - Login</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	
+	<body>
+		<div id="cadastrar"><a href="index.html">Login &raquo;</a></div>
+		<div id="login" class="form bradius" >
+			<div class="message"></div>
+			<div class="logo"><img src="images/logofatec.jpg"  width="250" height="90"></div>
+			<div class="acomodar">
+				<form method="POST" action="../controller/cadpro.php" name="novo" id="novo" onSubmit="return validanovo();">
+					<label for="id">			</label><input type="hidden" 	id="id"	  name="id"   class="txt bradius" />
+					<label for="nome">Nome:		</label><input type="text" 		id="nome" name="nome" class="txt bradius" tabindex="1" autocomplete="off" placeholder=" Digite o seu Nome " autofocus />
+					<label for="user">Usuário:	</label><input type="text" 		id="user" name="user" class="txt bradius" tabindex="2" autocomplete="off" placeholder=" Digite o seu Usuário " />
+					<label for="pass">Senha:	</label><input type="password"  id="pass" name="pass" class="txt bradius" tabindex="3" autocomplete="off" placeholder=" Digite a sua Senha " />
+					<label for="word">Confirma:	</label><input type="password"  id="word" name="word" class="txt bradius" tabindex="4" autocomplete="off" placeholder=" Confirme a sua Senha " />
+					<label for="mail">E-mail:	</label><input type="text"		id="mail" name="mail" class="txt bradius" tabindex="5" autocomplete="off" placeholder=" Digite o seu E-mail " />
+					<input type="submit" class="sb bradius" value="Cadastrar" tabindex="6" />
+				</form>
+			<!-- acomodar -->
+			</div>
+		<!-- div login -->
+		</div>	
+		<script language="JavaScript" src="../controller/js/validanovo.js"></script>
+		<script language="JavaScript" src="../controller/js/validamail.js"></script>
+	</body>
+</html>

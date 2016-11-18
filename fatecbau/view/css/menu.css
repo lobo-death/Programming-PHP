@@ -1,0 +1,169 @@
+*{margin: 1px; padding: 0;}
+
+body{
+font-family: arial, helvetica, sans-serif;
+font-size: 12px;
+}
+
+/* Container das ABAS */
+
+.tabs-container {
+    position: relative;
+    height: 550px;
+    max-width: 98%;
+    margin: 0 auto;
+}
+
+.tab-container {
+    position: relative;
+    height: 450px;
+    max-width: 99%;
+    margin: 0 auto;
+}
+
+.tabs-container p {
+    margin: 0;
+    padding: 0;
+}
+
+.tab-container p {
+    margin: 0;
+    padding: 0;
+}
+
+.tabs-container:after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    visibility: none;
+}
+
+.tab-container:after {
+    content: '.';
+    display: list-item;
+    clear: both;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    visibility: none;
+}
+ 
+/* ABAS */
+
+input.tabs {
+    display: none;
+}
+
+input.tab {
+    display: none;
+}
+
+input.tabs + label + div {
+    width: 98%;
+    opacity: 0;
+    position: absolute;
+    background: #eee;
+    top: 40px;
+    left: 0;
+    height: 500px;
+    padding: 10px;
+    z-index: -1;
+    transition: opacity ease-in-out .3s;
+}
+
+input.tab + label + div {
+    width: 99%;
+    opacity: 0;
+    position: absolute;
+    background: #dcdcdc;
+    top: 40px;
+    left: 0;
+    height: 440px;
+    padding: 5px;
+    z-index: -1;
+    transition: opacity ease-in-out .3s;
+}
+
+input.tabs:checked + label + div {
+    opacity: 1;
+    z-index: 1000;
+}
+ 
+input.tab:checked + label + div {
+    opacity: 1;
+    z-index: 1000;
+}
+
+/* Labels */
+input.tabs + label {
+    line-height: 40px;
+    padding: 0 20px;
+    float: left;
+    background: #444;
+    color: #fff;
+    cursor: pointer;
+    transition: background ease-in-out .3s;
+}
+
+input.tab + label {
+    line-height: 40px;
+    padding: 0 20px;
+    float: left;
+    background: #696969;
+    color: #fff;
+    cursor: pointer;
+    transition: background ease-in-out .3s;
+}
+
+input.tabs:checked + label {
+    color: #000;
+    background: #eee;
+}
+
+input.tab:checked + label {
+    color: #696969;
+    background: #dcdcdc;
+}
+
+.botao{
+    display: inline-block;
+	background-color: #BDBDBD;
+	position: relative;
+	left: 40px;
+	margin-top: 30px;
+	width: 120px;
+	height: 30px;
+}
+
+::-webkit-input-placeholder {
+   color: orange;
+   font: 12px verdana, arial, sans-serif;
+}
+
+:-moz-placeholder {
+   color: orange;
+   font: 12px verdana, arial, sans-serif;
+}
+
+::-moz-placeholder {
+   color: orange;  
+   font: 12px verdana, arial, sans-serif;
+}
+
+:-ms-input-placeholder {  
+   color: orange;  
+   font: 12px verdana, arial, sans-serif;
+}
+
+.visual{
+	visibility: hidden;
+}
+
+#tabela{
+	margin-left: 500 px;
+	padding: 100px;
+	display: none;
+}

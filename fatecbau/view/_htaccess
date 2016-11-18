@@ -1,0 +1,4 @@
+# http://codigofonte.uol.com.br/artigos/confira-20-dicas-e-truques-extremamente-uteis-do-htaccess
+
+RewriteEngine on
+RewriteRule ^menu.html$ menu.php

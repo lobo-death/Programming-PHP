@@ -1,0 +1,142 @@
+*{
+	margin:0;
+	padding:0;
+	outline:none;
+	list-style:none;	
+}
+
+a{
+	text-decoration:none;
+}
+body{
+	font: 16px "arial", "verdana", "helvetica";
+}
+
+#login{
+	width:300px;
+	margin: 0 auto;
+	position: relative;
+	top: 100px;
+	border: 1px solid #f1f1f1;
+	padding: 15px;
+}
+
+.form label{
+	display: block;
+	padding-top: 5px;
+}
+
+.logo{
+	 width: 250px; 
+	 height: 90px;
+	 margin: 0 auto;
+	 padding: 7px;
+}
+
+#cadastrar{
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 15px;
+	-webkit-border-bottom-left-radius: 8px;
+	-webkit-border-bottom-right-radius: 15px;
+	-moz-border-radius-bottomleft: 8px;
+	-moz-border-radius-bottomright: 15px;
+	height: 40px;
+	width: 120px;	
+	background: #f1f1f1;	
+	text-align: center;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+#cadastrar a{
+	padding-top: 5px;
+	display:block;
+	font: 16px arial;
+	color: #999;
+}
+
+#cadastrar:hover a{
+	color:#fff;
+}
+
+#cadastrar:hover{
+	background: #394957;
+	color: #fff;
+}
+
+.acomodar{
+	margin: 0 auto;
+	width: 250px;
+}
+
+.txt{
+	border:none;
+	height: 40px;
+	width: 250px;
+	border: thin solid #f1f1f1;
+}
+
+.txt:focus{
+	border: thin solid #394957;
+	box-shadow: 0 2px 10px #394957;
+	-webkit-box-shadow: 0 2px 10px #394957;
+	-moz-box-shadow: 0 2px 10px #394957;
+}
+
+.sb{
+	display:block;
+	border:none;
+	width: 250px;
+	height: 40px;
+	margin-top: 10px;
+	cursor: pointer;
+	font: 16px arial;
+	color: #999;
+}
+
+.sb:hover{
+	background: #394957; 
+	color: #fff;
+}
+
+/* classes de herança */
+.bradius{
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+
+.fleft{
+	float: left;
+}
+
+.fright{
+	float: right;
+}
+/* multiplos estilos */
+.txt, .txt:focus, .sb, .sb:hover, #cadastrar, #cadastrar:hover{
+	transition: all 0.5s linear;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+}
+
+::-webkit-input-placeholder {
+   color: orange;
+   font: 12px verdana, arial, sans-serif;
+}
+
+:-moz-placeholder {
+   color: orange;
+   font: 12px verdana, arial, sans-serif;
+}
+
+::-moz-placeholder {
+   color: orange;  
+   font: 12px verdana, arial, sans-serif;
+}
+
+:-ms-input-placeholder {  
+   color: orange;  
+   font: 12px verdana, arial, sans-serif;
+}
